@@ -1,22 +1,28 @@
 /* grid layout */
 
+p {
+    color: white;
+    font-size: 2vw;
+}
+
 body {
-    padding: 10vw;
     background-color: black;
-    background: linear-gradient(to right ,black, blue);
+    background: black;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    padding: 5vw;
+    padding: 3vw 20vw;
     grid-gap: 1vw;
 }
 
-#viewer {
+input {
+    font-size: 2vw;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     border: 1px solid orangered;
+    background: transparent;
 }
 
 .input-field {
