@@ -16,28 +16,25 @@
 </head>
 <body>
 
-    <button id="hide" >hide</button>
-    <button id="show">show</button>
+    
+    <button id="show">show calculator</button>
+
     <script>
-            $("#hide").click(function(){
-                $("section").hide();
-            })
-        
             $("#show").click(function(){
-                $("section").show();
+                $("section").toggle(500);
             })
-        </script>
+    </script>
 
 <form name="calculator">
 
-    <section class="container">
+    <section class="container" style="display:none;">
 
         <div class="input-field" id="viewer">
             <input type="text" name="display" id="display" disabled>
         </div>
 
         <div> 
-            <input type="button" class="num" name="one" value="1" onclick="calculator.display.value += '1'">
+            <input type="button" class="num btn7" name="one" value="1" onclick="calculator.display.value += '1'">
         </div>
 
         <div>
@@ -99,8 +96,6 @@
         <div>
             <input type="button" class="ops" name="divide" value="/"  onclick="calculator.display.value += '/'">
         </div>
-
-        <p>awe</p>
 
     </section>
 
